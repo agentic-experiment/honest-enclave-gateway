@@ -1,0 +1,15 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #050510; font-family: 'Segoe UI', system-ui, sans-serif; color: #e8e8ff; }
+canvas { display: block; position: fixed; inset: 0; }
+#hud { position: fixed; top: 12px; left: 12px; right: 12px; display: flex; flex-direction: column; gap: 6px; pointer-events: none; z-index: 5; }
+#title { font-size: 14px; letter-spacing: 4px; opacity: 0.7; text-transform: uppercase; }
+#stats { display: flex; gap: 18px; font-size: 14px; }
+#stats span { background: rgba(20,20,40,0.5); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(120,120,200,0.3); }
+#msg { min-height: 20px; font-size: 13px; color: #ffd6a5; text-align: center; margin-top: 4px; }
+#overlay { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(5,5,16,0.85); z-index: 10; gap: 16px; text-align: center; padding: 24px; }
+#overlay.hidden { display: none; }
+#overlayTitle { font-size: 36px; letter-spacing: 6px; text-transform: uppercase; color: #7df9ff; text-shadow: 0 0 20px #7df9ff; }
+#overlayBody { max-width: 520px; line-height: 1.6; opacity: 0.85; }
+#overlayBtn { padding: 10px 28px; border: 1px solid #7df9ff; background: transparent; color: #7df9ff; border-radius: 8px; cursor: pointer; font-size: 16px; letter-spacing: 2px; }
+#overlayBtn:hover { background: rgba(125,249,255,0.15); }
+@media (max-width: 600px) { #title { font-size: 11px; letter-spacing: 2px; } #stats { font-size: 12px; gap: 8px; } }
